@@ -3,16 +3,8 @@
 # Prepara os dados de exportação usados no TCC.
 #
 # Organização:
-#   Seções 1 a 4 -> parte comum: lê o Comex Stat uma vez, confere
+#   Seções 1 a 4 - parte comum: lê o Comex Stat uma vez, confere
 #                   e monta as bases que todas as análises usam.
-#   Seção 5 em diante -> uma seção por tabela ou gráfico. Cada uma
-#                   só PREPARA os dados (filtra, cria colunas, marca
-#                   períodos) e salva um arquivo próprio. As contas
-#                   (estimar a reta, calcular desvios) ficam no
-#                   script de cada tabela.
-#
-# Para acrescentar uma nova tabela ou gráfico: copie o modelo da
-# seção 5, mude o nome e salve com um nome de arquivo novo.
 # ==============================================================
 
 library(tidyverse)   
