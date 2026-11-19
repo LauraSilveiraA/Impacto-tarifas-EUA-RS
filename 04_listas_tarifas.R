@@ -141,7 +141,7 @@ baixa_bl <- function(caminho) {
 # lê as duas e compara: se não baterem, há erro de leitura.
 
 # ---- 3.1 EO 14257 (abr/2025): Anexo II, isentos da tarifa de 10% ----
-linhas <- ler_linhas("eo-14257_10_1.pdf")
+ler_linhas("2025-04-02_EO14257_tarifa_reciproca.pdf")
 
 ini <- acha(linhas, "ANNEX II",  exato = TRUE)
 fim <- acha(linhas, "ANNEX III", depois = ini, exato = TRUE)
@@ -156,7 +156,7 @@ cat("EO 14257 | Anexo II:", length(anexo2_abr), "| nota (iii):", length(nota), "
 confere(anexo2_abr, nota, "EO 14257: Anexo II x nota (iii)")
 
 # ---- 3.2 EO 14323 (ago/2025): isentos do adicional de 40% ----
-linhas <- ler_linhas("eo-14323_40_1.pdf")
+ler_linhas("2025-07-30_EO14323_adicional_brasil.pdf")
 
 i3 <- acha(linhas, "(iii) As provided in heading 9903.01.81")
 i4 <- acha(linhas, "(iv) As provided in heading 9903.01.82", depois = i3)
@@ -173,7 +173,7 @@ anexo1 <- extrai_hts(str_extract(linhas[ini:fim], "^\\s*\\d{4}\\.\\d{2}\\.\\d{2}
 confere(anexo1, c(ago_isento, ago_aeronave), "EO 14323: Anexo I x notas (iii)+(iv)")
 
 # ---- 3.3 EO 14361 (nov/2025): lista consolidada, que SUBSTITUI a de agosto ----
-linhas <- ler_linhas("eo-14361_40_2.pdf")
+ler_linhas("2025-11-20_EO14361_isencoes_brasil.pdf")
 
 i_a2   <- acha(linhas, "ANNEX II", exato = TRUE)
 anexo1 <- linhas[seq_len(i_a2 - 1)]
