@@ -35,14 +35,17 @@ As tabelas são salvas em `.csv` e em `.tex`, prontas para o LaTeX. Os gráficos
 
 Dados Comex Stat não estão neste repositório. Baixe-os nas fontes acima.
 
+# Ordens executivas dos EUA
 
 PDFs lidos pelo script `04_listas_tarifas.R`, publicados no Federal Register.
 
 | Arquivo | Ato | O que o script usa | Fonte oficial |
 |---|---|---|---|
-| [2025-04-02_EO14257_tarifa_reciproca.pdf](2025-04-02_EO14257_tarifa_reciproca.pdf) | EO 14257 | Anexo II: produtos isentos da tarifa de 10% | [Federal Register](https://www.govinfo.gov/content/pkg/FR-2025-04-07/html/2025-06063.htm) |
-| [2025-07-30_EO14323_adicional_brasil.pdf](2025-07-30_EO14323_adicional_brasil.pdf) | EO 14323 | Anexo I: produtos isentos do adicional de 40% sobre o Brasil | [Federal Register](https://www.govinfo.gov/content/pkg/FR-2025-08-05/pdf/2025-14896.pdf) |
-| [2025-11-20_EO14361_isencoes_brasil.pdf](2025-11-20_EO14361_isencoes_brasil.pdf) | EO 14361 | Anexo I consolidado, com as isenções de novembro de 2025 | [Casa Branca](https://www.whitehouse.gov/presidential-actions/2025/11/modifying-the-scope-of-tariffs-on-the-government-of-brazil/) |
+| `2025-04-02_EO14257_tarifa_reciproca.pdf` | EO 14257 | Anexo II: produtos isentos da tarifa de 10% | [Federal Register](https://www.federalregister.gov/d/2025-06063) |
+| `2025-07-30_EO14323_adicional_brasil.pdf` | EO 14323 | Anexo I: produtos isentos do adicional de 40% sobre o Brasil | [Federal Register](https://www.federalregister.gov/d/2025-14896) |
+| `2025-11-20_EO14361_isencoes_brasil.pdf` | EO 14361 | Anexo I consolidado, com as isenções de novembro de 2025 | [Casa Branca](https://www.whitehouse.gov/presidential-actions/2025/11/modifying-the-scope-of-tariffs-on-the-government-of-brazil/) |
+
+Para rodar o script, copie os PDFs para `C:/TCC_2/Bib/Decretos` ou troque o caminho na linha 45 do script.
 
 ## Como rodar
 
